@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>
+           HOTSTAR
+        </title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    
+    <body>
+        <header>
+            <h2 class="logo">HOTSTAR</h2>
+            <nav class="navigation">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <button class="btnLogin-popup">Login</button>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <span class="close"><ion-icon name="close-circle"></ion-icon></span>
+            <div class="form-box Login">
+                <h2>Login</h2>
+                <form class ="login-form" action="">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="email"></ion-icon></span>
+                        <input type="email" id="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" id="password" required><label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox">
+                        Remember me
+                    </label>
+                    <a href="#">forget Password</a>
+                    </div>
+                    <button type="submit" class="btn" onclick="auth()">Login</button>
+                    <div class="Login-register">
+                        <p>Dont have account
+                            <a href="#" class="register-link">Register Now</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+           
+            <div class="form-box Register">
+                <h2>Register</h2>
+                <form action="mailto: anmold60@gmail.com" method="post" enctype="text/plain">
+                    <div class="input-box">
+                        <span class="icon">
+                            <ion-icon name="person"></ion-icon>
+                        </span>
+                        <input type="text" name="Username">
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email" name="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" name="password"><label>Password</label>
+                    </div>
+                    
+                    <button type="submit" class="btn" value="submit">Register</button>
+                    <div class="Login-register">
+                        <p>Already have an account
+                            <a href="#" class="login-link">Login</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="valid.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
